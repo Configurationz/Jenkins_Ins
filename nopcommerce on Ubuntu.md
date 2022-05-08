@@ -8,7 +8,6 @@ This needs to be done once per machine.
 > Step1 - Register Microsoft key and feed
 > ---------------------------------------
 
-
 - Open a terminal and run the following commands:
 ```
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -177,7 +176,7 @@ sudo systemctl restart nginx
 *Now that everything is ready, we can proceed to install and configure the store.*
 
 - The further installation process for nopCommerce is the same as the installation process on Windows.
-- We can use the following instructions
+- We can use the following 
 [Installation process](https://docs.nopcommerce.com/en/installation-and-upgrading/installing-nopcommerce/installing-on-windows.html#install-nopcommerce)
 
 > Troubleshooting
