@@ -59,7 +59,7 @@ sudo snap install mysql-shell
 
 - Install the nginx package:
 ```
-sudo apt-get install nginx
+sudo apt-get install nginx -y
 ```
 * Run the nginx service:
 ```
