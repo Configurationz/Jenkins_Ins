@@ -193,3 +193,17 @@ sudo apt-get install libgdiplus
 *If you want to use SSL on your site, don't forget to set the ``UseHttpXForwardedProto`` setting to ``true`` in the **appsettings.json** file.*
 
 
+> Xtra Stuff
+
+- Try to run the following two commands:
+```
+sudo fuser -k 80/tcp
+```
+```
+sudo fuser -k 443/tcp
+```
+& then execute
+```
+sudo service nginx restart
+```
+
