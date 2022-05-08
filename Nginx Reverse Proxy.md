@@ -24,7 +24,7 @@ sudo wget https://nginx.org/keys/nginx_signing.key
 ```
 sudo apt-key add nginx_signing.key
 ```
-- This downloads the signing key for Nginx, which verifies that you’re downloading authentic software.
+This downloads the signing key for Nginx, which verifies that you’re downloading authentic software.
 
 - Open sources.list File for Editing In the terminal, enter the following:
 ```
@@ -38,7 +38,7 @@ deb https://nginx.org/packages/mainline/debian/ <CODENAME> nginx
 deb-src https://nginx.org/packages/mainline/debian/ <CODENAME> nginx
 ```
 - Replace <CODENAME> with your distribution of Linux. Save and exit the file.
-  
+
 * Install Latest Release of Nginx. To install the latest release of Nginx, use the commands:
 ```
 sudo apt-get remove nginx-common
@@ -62,5 +62,72 @@ sudo systemctl enable nginx
 ```
 sudo systemctl status nginx
 ```
-*The output should show you the service is active (running).* 
+*The output should show you the service is active (running).*
 
+> Step 4: Unlink Default Configuration File
+
+- In the terminal, enter the following:
+```
+sudo unlink /etc/nginx/sites-enabled/default
+```
+> Step 5: Create New Configuration File
+
+- To create a new configuration file, enter:
+```
+cd /etc/nginx/sites-available/
+```
+```
+sudo vi custom_server.conf
+```
+- Replace custom_server with a name that’s meaningful to you. In the new file, enter:
+```
+server {
+    listen 80;
+    location / {
+        proxy_pass http://192.x.x.2;
+    }
+}
+```
+  
+- This is a very basic Nginx reverse proxy example. Nginx is set to listen for all traffic on port 80 for all traffic.
+
+- The proxy_pass command directs all traffic on port 80 to http://my_server. Just change http://my_server to the location of your choice, 
+  and Nginx will intercept client requests and route them to the location you specify. Once you’ve finished, save the file and exit.
+
+> Step 6: Link and Activate Configuration File
+
+- To activate the new Nginx file, enter:
+```
+ln -s /etc/nginx/sites-available/custom_server.conf /etc/nginx/sites-enabled/custom_server.conf
+```
+- As usual, replace custom_server with the name of the configuration file you created in Step 5.
+
+> Step 7: Test and Restart Nginx
+
+- To test Nginx:
+```
+sudo service nginx configtest
+```
+- To restart Nginx:
+```
+sudo service nginx restart
+```
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
