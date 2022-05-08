@@ -202,7 +202,7 @@ sudo fuser -k 80/tcp
 ```
 sudo fuser -k 443/tcp
 ```
-& then execute
+- And then execute
 ```
 sudo service nginx restart
 ```
