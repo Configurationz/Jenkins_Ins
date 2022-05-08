@@ -43,6 +43,10 @@ MySQL Shell provides scripting capabilities for JavaScript and Python and includ
 - To install mysql-shell, simply use the following commands:
 
 ```
+sudo apt install mysql-client-core-8.0
+```
+
+```
 sudo apt install snapd
 ````
 
