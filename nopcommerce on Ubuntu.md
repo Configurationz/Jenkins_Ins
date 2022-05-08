@@ -184,7 +184,7 @@ sudo systemctl restart nginx
 
 - Gdip
 
-*If you have a problem with loading images in the RichText Box (The type initializer for 'Gdip' threw an exception), just install the libgdiplus library:*
+*If you have any problem with loading images in the RichText Box (The type initializer for 'Gdip' threw an exception), just install the libgdiplus library:*
 ```
 sudo apt-get install libgdiplus
 ```
