@@ -6,6 +6,8 @@ Before installing .NET Core, we'll need to register the Microsoft key and instal
 This needs to be done once per machine.
 
 > Step1 - Register Microsoft key and feed
+> ---------------------------------------
+
 
 - Open a terminal and run the following commands:
 ```
@@ -17,6 +19,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```
 
 > Step2 - Install the .NET Core Runtime
+> -------------------------------------
 
 - Update the products available for installation, then install the .NET runtime:
 ```
@@ -33,6 +36,7 @@ dotnet --list-runtimes
 ```
 
 > Step3 - Install mysql-shell
+> ---------------------------
 
 *MySQL Shell is an advanced client and code editor for MySQL Server.In addition to the provided SQL functionality, similar to mysql, 
 MySQL Shell provides scripting capabilities for JavaScript and Python and includes APIs for working with MySQL.*
@@ -48,6 +52,7 @@ sudo snap install mysql-shell
 ```
 
 > Step4 - Install nginx
+> ---------------------
 
 - Install the nginx package:
 ```
@@ -105,6 +110,7 @@ server {
 }
 ```
 > Step5 - Get nopCommerce
+> -----------------------
 
 - Create a directory:
 ```
@@ -134,6 +140,7 @@ sudo chgrp -R www-data nopCommerce450/
 sudo chown -R www-data nopCommerce450/
 ```
 > Step6 - Create the nopCommerce service
+> --------------------------------------
 
 - Create the /etc/systemd/system/nopCommerce450.service file with the following contents:
 ```
@@ -169,19 +176,22 @@ sudo systemctl restart nginx
 ```
 *Now that everything is ready, we can proceed to install and configure the store.*
 
-- The further installation process for nopCommerce is the same as the installation process on Windows; we can use the following instructions
+- The further installation process for nopCommerce is the same as the installation process on Windows; 
+- we can use the following instructions
 [Installation process](https://docs.nopcommerce.com/en/installation-and-upgrading/installing-nopcommerce/installing-on-windows.html#install-nopcommerce)
 
+> Troubleshooting
+> ---------------
 
+- Gdip
 
+*If you have a problem with loading images in the RichText Box (The type initializer for 'Gdip' threw an exception), just install the libgdiplus library:*
+```
+sudo apt-get install libgdiplus
+```
+- SSL
 
-
-
-
-
-
-
-
+*If you want to use SSL on your site, don't forget to set the UseHttpXForwardedProto setting to true in the appsettings.json file.*
 
 
 
