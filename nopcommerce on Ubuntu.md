@@ -176,8 +176,8 @@ sudo systemctl restart nginx
 ```
 *Now that everything is ready, we can proceed to install and configure the store.*
 
-- The further installation process for nopCommerce is the same as the installation process on Windows; 
-- we can use the following instructions
+- The further installation process for nopCommerce is the same as the installation process on Windows.
+- We can use the following instructions
 [Installation process](https://docs.nopcommerce.com/en/installation-and-upgrading/installing-nopcommerce/installing-on-windows.html#install-nopcommerce)
 
 > Troubleshooting
@@ -192,11 +192,5 @@ sudo apt-get install libgdiplus
 - SSL
 
 *If you want to use SSL on your site, don't forget to set the UseHttpXForwardedProto setting to true in the appsettings.json file.*
-
-
-
-
-
-
 
 
