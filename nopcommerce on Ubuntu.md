@@ -190,6 +190,6 @@ sudo apt-get install libgdiplus
 ```
 - SSL
 
-*If you want to use SSL on your site, don't forget to set the UseHttpXForwardedProto setting to true in the appsettings.json file.*
+*If you want to use SSL on your site, don't forget to set the ``UseHttpXForwardedProto`` setting to ``true`` in the **appsettings.json** file.*
 
 
