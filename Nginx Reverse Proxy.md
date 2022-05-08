@@ -1,7 +1,7 @@
-###Setting Up an Nginx Reverse Proxy
-------------------------------------
+### Setting Up an Nginx Reverse Proxy
+-------------------------------------
 
-> Step 1: Install Nginx from Default Repositories
+> Step 1 - Install Nginx from Default Repositories
 - Open a terminal window and enter the following:
 ```
 sudo apt-get update
@@ -15,7 +15,7 @@ sudo apt-get install nginx
 *Note: This is the easiest way to install Nginx on CentOS or Ubuntu, but it may not load the latest stable release. 
 Move on to Step 2 to add and install from the Nginx software repositories.*
 
-> Step 2 (optional): Install Nginx from Official Repository
+> Step 2 (optional) - Install Nginx from Official Repository
 
 - Add a Security Key - In a terminal window, enter the following:
 ```
@@ -38,5 +38,29 @@ deb https://nginx.org/packages/mainline/debian/ <CODENAME> nginx
 deb-src https://nginx.org/packages/mainline/debian/ <CODENAME> nginx
 ```
 - Replace <CODENAME> with your distribution of Linux. Save and exit the file.
-
+  
+* Install Latest Release of Nginx. To install the latest release of Nginx, use the commands:
+```
+sudo apt-get remove nginx-common
+```
+```
+sudo apt-get update
+```
+```
+sudo apt-get install nginx
+```
+  
+> Step 3: Start Nginx and Configure to Launch on Reboot. To start Nginx:
+```
+sudo systemctl start nginx
+```
+- To enable Nginx:
+```
+sudo systemctl enable nginx
+```
+- To check Nginx is running:
+```
+sudo systemctl status nginx
+```
+*The output should show you the service is active (running).* 
 
