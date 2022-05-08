@@ -8,7 +8,7 @@ sudo fuser -k 80/tcp
 ```
 sudo fuser -k 443/tcp
 ```
-Then execute
+And then execute
 ```
 sudo service nginx restart
 ```
@@ -25,3 +25,6 @@ service nginx configtest
 service nginx restart
 ```
 Remember, if you receive a failed test, that most likely indicates that Apache was not properly set up.
+```
+apachectl configtest
+```
