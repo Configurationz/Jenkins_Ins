@@ -13,12 +13,13 @@ And then execute
 sudo service nginx restart
 ```
 
+
 > Test Nginx and the Nginx Reverse Proxy
 
 Lastly, we need to run an Nginx configuration test and restart Nginx to check its performance. 
 Type the below command to verify the Nginx functioning on the Linux terminal:
 ```
-service nginx configtest
+sudo service nginx configtest
 ```
 
 ```
