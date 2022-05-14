@@ -31,15 +31,16 @@ sudo apt install openjdk-11-jdk -y
 sudo systemctl status jenkins.service
 ```
 
-* Step 3 - Navigate to http://<publicip&gt;:8080
+* Step 3 - Navigate to `http://<publicip>:8080`
 
-* Step4 - Continue the installation
+* Step4 - Continue with Jenkins Installation
 ```
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 * Copy the password & paste on Jenkins page
+  -  
 
-
+:octocat:
 
 
 
