@@ -60,7 +60,7 @@ sudo cat /etc/passwd
 ```
 sudo visudo
 ```
-* Now giving the *jenkins* user root privilege with no password
+* Next configure the *jenkins* user without password prompts
 ```
 # Allow members of group sudo to execute any command
 %sudo   ALL=(ALL:ALL) ALL
