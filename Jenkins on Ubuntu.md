@@ -26,6 +26,7 @@ sudo apt install openjdk-11-jdk -y
 
   [Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/)
   
+
 * Step2 - Verify Jenkins Service
 ```
 sudo systemctl status jenkins.service
@@ -38,12 +39,24 @@ sudo systemctl status jenkins.service
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 * Copy the password & paste on Jenkins page
-  -  
+  -  Customize Jenkins: Install suggested plugins
+  -  Getting Started:
+  -  Create First Admin User:
+  -  Instance Configuration: `http://<privateip>:8080/` & then Save and Finish.
+  -  Jenkis is Ready: Start using Jenkins
+ 
+* Next login CLI to check for users:
+```
+sudo cat /etc/passwd
+```
+* A new user called as *jenkins* is created and the group name is *Jenkins* with the home directory of `/var/lib/jenkins`
+
+
+
+
+For any queries [Ref here](https://directdevops.blog/2022/05/02/devops-classroomnotes-02-may-2022/)
 
 :octocat:
-
-
-
 
 
 
