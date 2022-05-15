@@ -51,18 +51,19 @@ sudo cat /etc/passwd
 ```
 * A new user called as *jenkins* is created and the group name is *Jenkins* with the home directory of `/var/lib/jenkins`
 
-
+* From Jenkins UI we can do anything that the linux user jenkins can do.
+* From Jenkins UI if we need to do installations etc, we need sudo permissions without password.
+* So Lets configure linux jenkins user to have sudo permissions without password prompts
+```
+sudo visudo
+```
+* Now add the jenkins user to sudoers group with no password
+`jenkins ALL=(ALL:ALL) NOPASSWD:ALL `
 
 
 For any queries [Ref here](https://directdevops.blog/2022/05/02/devops-classroomnotes-02-may-2022/)
 
 :octocat:
-
-
-
-
-
-
 
 
 
