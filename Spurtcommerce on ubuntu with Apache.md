@@ -94,11 +94,18 @@ sudo apt install imagemagick -y
 >Angular Installation
 >--------------------
 ```
-npm install -g @angular/cli
+sudo npm install -g @angular/cli -y
 ```
 *NOTE: Required minimum 4gb RAM for installing Angular CLI*
 
-
+> Installing Spurtcommerce
+> ------------------------ 
+```
+wget https://github.com/Manojkumarpolaka/spurtcommerce/raw/master/Spurtcommerce_3.0.2_community_LTS.zip
+```
+```
+sudo apt install unzip -y
+```
 
 
 
