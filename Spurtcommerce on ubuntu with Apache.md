@@ -98,8 +98,8 @@ sudo npm install -g @angular/cli -y
 ```
 *NOTE: Required minimum 4gb RAM for installing Angular CLI*
 
-> Installing Spurtcommerce
-> ------------------------ 
+> Spurtcommerce Installation
+> -------------------------- 
 ```
 wget https://github.com/Manojkumarpolaka/spurtcommerce/raw/master/Spurtcommerce_3.0.2_community_LTS.zip
 ```
