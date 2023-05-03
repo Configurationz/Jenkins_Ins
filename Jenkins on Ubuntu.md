@@ -1,5 +1,5 @@
-### Installation & Configuration
---------------------------------
+### Installations & Configurations
+-----------------------------------
 
 > Initial Steps
 > -------------
@@ -47,7 +47,7 @@ mvn --version
 > Default locale: en, platform encoding: UTF-8                                                                                                            
 > OS name: "linux", version: "5.15.0-1037-azure", arch: "amd64", family: "unix"
 
-* We may need to install multiple versions of Java/Maven/etc. so we need to be very careful with environment variables.
+- We may need to install multiple versions of Java/Maven/etc. so we need to be very careful with environment variables.
   So, using following command to set a specific java as a temporary default, we can switch between the jdk versions.
 ```
 export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin:$PATH"
