@@ -15,7 +15,7 @@
 * Run the Automated tests: `mvn test`
 * Create the package: `mvn package`
 
-### Jenkins 
+### JENKINS_HOME
 * Jenkins user's home directory
 ```
 /var/lib/jenkins
@@ -31,3 +31,15 @@ su jenkins
 pwd
 ```
 >/var/lib/jenkins
+
+* Whatever the configuration we do on Jenkins UI, everything get's stored in Jenkin's server i.e., cli as pom.xml file.
+* After cloning from any repository, the whole repository gets cloned with all the files & folders in workspace directory.
+
+
+
+
+
+
+
+
+
