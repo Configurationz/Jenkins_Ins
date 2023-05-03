@@ -9,12 +9,12 @@
 sudo apt update
 ```
 
-- Search for a specific openjdk 
+- Search for a specific openjdk (_8,11,17,19_)
 ```
 sudo apt-cache search openjdk
 ```
 
-- Search for a specific jdk version 
+- Check which jdk version we may download
 ```
 sudo apt-cache madison openjdk-11-jdk
 ```
@@ -24,8 +24,27 @@ sudo apt-cache madison openjdk-11-jdk
 sudo apt install openjdk-11-jdk -y
 ```
 
-> Jenkins Installation
->----------------------
+- Install Maven
+```
+sudo apt install maven -y
+```
+
+- Verify Installations (if required)
+```
+java -version
+```
+```
+mvn --version
+```
+
+* We may need to install multiple versions of Java/Maven/etc. so we need to be very careful with environment variables.
+  So, we can use the following command to set a specific java as a temporary default.
+```
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin:$PATH"
+```
+
+> Jenkins Installations
+>-----------------------
 
 * Step1 - Execute the commands sequentiallly
 
