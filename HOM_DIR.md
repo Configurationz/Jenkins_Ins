@@ -36,6 +36,8 @@ pwd
   * Whatever the configuration we do on Jenkins UI, everything get's stored in Jenkin's server i.e., cli as pom.xml file.
   * After cloning from any repository, the whole repository gets cloned with all the files & folders in workspace directory.
   * When we build a project, jenkins creates a folder with project's name in workspace folder, this folder is referred as workspace for the job.
+  * How to preserve the data of Jenkins ?
+  * Take backup of `/var/lib/jenkins` folder frequently because jenkins stores everything in it's home directory.
 
 
 
