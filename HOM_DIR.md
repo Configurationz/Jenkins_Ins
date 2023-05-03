@@ -39,7 +39,9 @@ pwd
   * How to preserve the data of Jenkins ?
   * Take backup of `/var/lib/jenkins` folder frequently because jenkins stores everything in it's home directory.
 
-
+* Jenkins has two types of Nodes -
+  * __Master Node__: This is the node where we install jenkins.
+  * __Node__: This is the node on which we can run the job which matches the label definition.
 
 
 
