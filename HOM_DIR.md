@@ -42,8 +42,7 @@ pwd
 * Jenkins has two types of Nodes -
   * __Master Node__: This is the node where we install jenkins.
   * __Node__: This is the node on which we can run the job which matches the label definition.
-
-
+* Adding more Nodes increases number of executors per server which means we can build more projects.
 
 
 
