@@ -32,8 +32,10 @@ pwd
 ```
 >/var/lib/jenkins
 
-* Whatever the configuration we do on Jenkins UI, everything get's stored in Jenkin's server i.e., cli as pom.xml file.
-* After cloning from any repository, the whole repository gets cloned with all the files & folders in workspace directory.
+* Extra
+  * Whatever the configuration we do on Jenkins UI, everything get's stored in Jenkin's server i.e., cli as pom.xml file.
+  * After cloning from any repository, the whole repository gets cloned with all the files & folders in workspace directory.
+  * When we build a project, jenkins creates a folder with project's name in workspace folder, this folder is referred as workspace for the job.
 
 
 
