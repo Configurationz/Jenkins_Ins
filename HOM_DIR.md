@@ -30,4 +30,4 @@ su jenkins
 ```
 pwd
 ```
-`/var/lib/jenkins`
+>/var/lib/jenkins
