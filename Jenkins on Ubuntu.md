@@ -33,21 +33,19 @@ sudo apt install maven -y
 ```
 java -version
 ```
-<table><tr><td>
-  openjdk version "11.0.18" 2023-01-17
-  OpenJDK Runtime Environment (build 11.0.18+10-post-Ubuntu-0ubuntu120.04.1)
-  OpenJDK 64-Bit Server VM (build 11.0.18+10-post-Ubuntu-0ubuntu120.04.1, mixed mode, sharing)
-</td></tr></table>
+> openjdk version "11.0.18" 2023-01-17                                                                                                                    
+> OpenJDK Runtime Environment (build 11.0.18+10-post-Ubuntu-0ubuntu120.04.1)                                                                        
+> OpenJDK 64-Bit Server VM (build 11.0.18+10-post-Ubuntu-0ubuntu120.04.1, mixed mode, sharing)
+
+
 ```
 mvn --version
 ```
-<table><tr><td>
-  Apache Maven 3.6.3
-  Maven home: /usr/share/maven
-  Java version: 1.8.0_362, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
-  Default locale: en, platform encoding: UTF-8
-  OS name: "linux", version: "5.15.0-1037-azure", arch: "amd64", family: "unix"
-</td></tr></table>
+> Apache Maven 3.6.3                                                                                                                      
+> Maven home: /usr/share/maven                                                                                                
+> Java version: 1.8.0_362, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre                                                          
+> Default locale: en, platform encoding: UTF-8                                                                                                            
+> OS name: "linux", version: "5.15.0-1037-azure", arch: "amd64", family: "unix"
 
 * We may need to install multiple versions of Java/Maven/etc. so we need to be very careful with environment variables.
   So, using following command to set a specific java as a temporary default, we can easily switch between the versions.
