@@ -9,9 +9,14 @@
 sudo apt update
 ```
 
-- Search for a specific java version 
+- Search for a specific openjdk 
 ```
 sudo apt-cache search openjdk
+```
+
+- Search for a specific jdk version 
+```
+sudo apt-cache madison openjdk-11-jdk
 ```
 
 - Install Java 11
@@ -67,7 +72,7 @@ sudo visudo
 jenkins ALL=(ALL:ALL) NOPASSWD:ALL
 ```
 
-For any queries [Ref here](https://directdevops.blog/2022/05/02/devops-classroomnotes-02-may-2022/)
+For further Details [Ref here](https://directdevops.blog/2022/05/02/devops-classroomnotes-02-may-2022/)
 
 :octocat:
 
