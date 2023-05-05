@@ -3,6 +3,7 @@
 ```
 /usr/lib/jvm/java-11-openjdk-amd64/
 ```
+[Archived OpenJDK General-Availability Releases](https://jdk.java.net/archive/)
 
 ### Maven home:
 ```
@@ -20,7 +21,7 @@
 ```
 /var/lib/jenkins
 ```
-* Firstly, become a root user as we can login any user being a superuser.
+* To verify, become a root user as we can login any user being a superuser.
 ```
 sudo -i
 ```
@@ -32,6 +33,7 @@ pwd
 ```
 >/var/lib/jenkins
 
+[Official Jenkins LTS versions](https://www.jenkins.io/doc/book/installing/linux/)
 * Extra
   * Whatever the configuration we do on Jenkins UI, everything get's stored in Jenkin's server i.e., cli as pom.xml file.
   * After cloning from any repository, the whole repository gets cloned with all the files & folders in workspace directory.
