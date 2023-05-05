@@ -3,6 +3,8 @@
 ```
 /usr/lib/jvm/java-11-openjdk-amd64/
 ```
+[OpenLogic](https://www.openlogic.com/openjdk-downloads)
+
 [Microsoft Build of OpenJDK](https://learn.microsoft.com/en-us/java/openjdk/download)
 
 [Red Hat build of OpenJDK](https://developers.redhat.com/products/openjdk/download)
@@ -11,8 +13,9 @@
 
 [AdoptOpenJDK / openjdk11-binaries _(GitHub)_](https://github.com/AdoptOpenJDK/openjdk11-binaries/releases)
 
+[Prebuilt OpenJDK packages _(official documentation)_](https://openjdk.org/install/)
 
-### Maven home:
+### Maven home
 ```
 /usr/share/maven
 ```
