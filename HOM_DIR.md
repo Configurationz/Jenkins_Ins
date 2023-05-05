@@ -9,7 +9,7 @@
 ```
 /usr/share/maven
 ```
-* Maven will download all the necessary dependencies to compile/test/package from a maven central repository [Refer Here](https://mvnrepository.com/repos/central) 
+* Maven will download all the necessary dependencies to compile/test/package from a maven [central repository](https://mvnrepository.com/repos/central) 
   and it downloads to `M2_HOME` which is by default `<HOME-DIR>/.m2` which is referred as local repository.
 
 * Compile the code: `mvn compile`
