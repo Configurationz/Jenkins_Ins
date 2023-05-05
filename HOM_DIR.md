@@ -3,7 +3,14 @@
 ```
 /usr/lib/jvm/java-11-openjdk-amd64/
 ```
+[Microsoft Build of OpenJDK](https://learn.microsoft.com/en-us/java/openjdk/download)
+
+[Red Hat build of OpenJDK](https://developers.redhat.com/products/openjdk/download)
+
 [Archived OpenJDK General-Availability Releases](https://jdk.java.net/archive/)
+
+[AdoptOpenJDK / openjdk11-binaries _(GitHub)_](https://github.com/AdoptOpenJDK/openjdk11-binaries/releases)
+
 
 ### Maven home:
 ```
