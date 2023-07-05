@@ -1,8 +1,6 @@
 
 ### JAVA_HOME
-```
-/usr/lib/jvm/java-11-openjdk-amd64/
-```
+
 [OpenLogic](https://www.openlogic.com/openjdk-downloads)
 
 [Microsoft Build of OpenJDK](https://learn.microsoft.com/en-us/java/openjdk/download)
@@ -14,6 +12,56 @@
 [AdoptOpenJDK / openjdk11-binaries _(GitHub)_](https://github.com/AdoptOpenJDK/openjdk11-binaries/releases)
 
 [Prebuilt OpenJDK packages _(official documentation)_](https://openjdk.org/install/)
+
+* We'll be looking for Java 11 installed in Ubuntu Distribution, using following commands.
+```
+whereis java
+```
+> java: /usr/bin/java /usr/share/java /usr/share/man/man1/java.1.gz
+
+```
+ls -al /usr/bin/java
+```
+> lrwxrwxrwx 1 root root 22 Jul  3 08:39 /usr/bin/java -> /etc/alternatives/java
+
+```
+ls -al /etc/alternatives/java
+```
+> lrwxrwxrwx 1 root root 43 Jul  3 08:39 /etc/alternatives/java -> /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+
+```
+/usr/lib/jvm/java-11-openjdk-amd64/bin/java -version
+```
+> openjdk version "11.0.19" 2023-04-18                                                                                                                                                      
+> OpenJDK Runtime Environment (build 11.0.19+7-post-Ubuntu-0ubuntu120.04.1)                                                                                
+> OpenJDK 64-Bit Server VM (build 11.0.19+7-post-Ubuntu-0ubuntu120.04.1, mixed mode, sharing)
+
+  * So, according to above conclusion, the path for Java Home Directory is /usr/lib/jvm/java-11-openjdk-amd64/
+
+* Now, Follow the same steps for RedHat 
+```
+whereis java
+```
+> java: /usr/bin/java /usr/lib/java /etc/java /usr/share/java /usr/share/man/man1/java.1.gz
+
+```
+ls -al /usr/bin/java
+```
+> lrwxrwxrwx. 1 root root 22 Jul  5 02:25 /usr/bin/java -> /etc/alternatives/java
+
+```
+ls -al /etc/alternatives/java
+```
+> lrwxrwxrwx. 1 root root 62 Jul  5 02:25 /etc/alternatives/java -> /usr/lib/jvm/java-11-openjdk-11.0.19.0.7-4.el8.x86_64/bin/java
+
+```
+/usr/lib/jvm/java-11-openjdk-11.0.19.0.7-4.el8.x86_64/bin/java -version
+```
+> openjdk version "11.0.19" 2023-04-18 LTS                                                                                                                                          
+> OpenJDK Runtime Environment (Red_Hat-11.0.19.0.7-2) (build 11.0.19+7-LTS)                                                                                                
+> OpenJDK 64-Bit Server VM (Red_Hat-11.0.19.0.7-2) (build 11.0.19+7-LTS, mixed mode, sharing)
+
+  * So, here, the path for Java Home Directory is /usr/lib/jvm/java-11-openjdk-11.0.19.0.7-4.el8.x86_64/
 
 ### Maven home
 ```
