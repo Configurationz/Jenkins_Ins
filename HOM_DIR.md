@@ -36,7 +36,7 @@ ls -al /etc/alternatives/java
 > OpenJDK Runtime Environment (build 11.0.19+7-post-Ubuntu-0ubuntu120.04.1)                                                                                
 > OpenJDK 64-Bit Server VM (build 11.0.19+7-post-Ubuntu-0ubuntu120.04.1, mixed mode, sharing)
 
-  * So, according to above conclusion, the path for Java Home Directory is /usr/lib/jvm/java-11-openjdk-amd64/
+  * So, according to above conclusion, the path for Java Home Directory is *__```/usr/lib/jvm/java-11-openjdk-amd64/```__*
 
 * Now, Follow the same steps for RedHat/CentOS
 ```
@@ -61,7 +61,7 @@ ls -al /etc/alternatives/java
 > OpenJDK Runtime Environment (Red_Hat-11.0.19.0.7-2) (build 11.0.19+7-LTS)                                                                                                
 > OpenJDK 64-Bit Server VM (Red_Hat-11.0.19.0.7-2) (build 11.0.19+7-LTS, mixed mode, sharing)
 
-* So, here, the path for Java Home Directory is /usr/lib/jvm/java-11-openjdk-11.0.19.0.7-4.el8.x86_64/
+* So, here, the path for Java Home Directory is *__```/usr/lib/jvm/java-11-openjdk-11.0.19.0.7-4.el8.x86_64/```__*
 
   * But, in some scenarios for RedHat/CentOS m/c, the java home directory's file path could be following as well
 ```
