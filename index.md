@@ -96,9 +96,9 @@ sudo cat /etc/passwd
 
 10. From Jenkins UI we can do anything that a linux user jenkins can do.
 
-11. From Jenkins UI if we need to do installations etc., we need sudo permissions without password.
+11. From Jenkins UI if we need to do any installations etc., we need sudo permissions without password.
 
-12. So Lets configure linux jenkins user to have sudo permissions without any password prompts
+12. So, Let's configure jenkins user from cli to have sudo permissions without any password prompts
 ```
 sudo visudo
 ```
