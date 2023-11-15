@@ -18,10 +18,9 @@ sudo apt-cache search openjdk
 sudo apt-cache madison openjdk-11-jdk
 ```
 
-|:-- openjdk-11-jdk --:|:-- 11.0.18+10-0ubuntu1-20.04.1 --:|:-- http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages --:|
-|:-- openjdk-11-jdk --:|:-- 11.0.18+10-0ubuntu1~20.04.1 --:|:-- http://azure.archive.ubuntu.com/ubuntu focal-security/main amd64 Packages --:|
-|:-- openjdk-11-jdk --:|:-- 11.0.7+10-3ubuntu1 --:|:-- http://azure.archive.ubuntu.com/ubuntu focal/main amd64 Packages --: |
-
+| openjdk-11-jdk | 11.0.18+10-0ubuntu1-20.04.1 | http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages |
+| openjdk-11-jdk | 11.0.18+10-0ubuntu1~20.04.1 | http://azure.archive.ubuntu.com/ubuntu focal-security/main amd64 Packages |
+| openjdk-11-jdk | 11.0.7+10-3ubuntu1 | http://azure.archive.ubuntu.com/ubuntu focal/main amd64 Packages |
 
 - Install Java 11
 ```
