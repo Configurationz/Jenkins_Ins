@@ -1,5 +1,5 @@
-## Installations & Configurations of Jenkins on ubuntu 
--------------------------------------------------------
+## Jenkins Installation & Configuration in ubuntu 
+--------------------------------------------------
 
 ### Pre-requisites:
 
@@ -60,7 +60,7 @@ export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin:$PATH"
 ### Jenkins Installations
 
 1. Execute the commands sequentiallly
-  _[Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/)_
+  _[Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/){:target="_blank"}_
   
 
 2. Verify Jenkins Service
@@ -109,7 +109,7 @@ sudo visudo
 jenkins ALL=(ALL:ALL) NOPASSWD:ALL
 ```
 
-For further Details [Refer here](https://directdevops.blog/2022/05/02/devops-classroomnotes-02-may-2022/){:target="_blank"}
+For further Details _[Refer here](https://directdevops.blog/2022/05/02/devops-classroomnotes-02-may-2022/){:target="_blank"}_
 
 ![Alt text](octocat.png)
 
