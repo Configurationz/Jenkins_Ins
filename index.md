@@ -1,5 +1,5 @@
-### Installations & Configurations
------------------------------------
+### Installations & Configurations of Jenkins on ubuntu 
+-------------------------------------------------------
 
 > Initial Steps
 > -------------
@@ -108,11 +108,4 @@ jenkins ALL=(ALL:ALL) NOPASSWD:ALL
 
 For further Details [Ref here](https://directdevops.blog/2022/05/02/devops-classroomnotes-02-may-2022/)
 
-:octocat:
-
-
-
-
-
-
-
+![Alt text](octocat.png)
