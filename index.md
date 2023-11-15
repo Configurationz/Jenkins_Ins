@@ -72,7 +72,6 @@ export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin:$PATH"
 
 1. Execute the commands sequentiallly
   _[Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/){:target="_blank"}_
-  
 
 2. Verify Jenkins Service
 ```
