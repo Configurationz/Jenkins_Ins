@@ -18,9 +18,9 @@ sudo apt-cache search openjdk
 sudo apt-cache madison openjdk-11-jdk
 ```
 
-> openjdk-11-jdk | 11.0.18+10-0ubuntu1-20.04.1 | http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages                                           
-> openjdk-11-jdk | 11.0.18+10-0ubuntu1~20.04.1 | http://azure.archive.ubuntu.com/ubuntu focal-security/main amd64 Packages                                        
-> openjdk-11-jdk | 11.0.7+10-3ubuntu1 | http://azure.archive.ubuntu.com/ubuntu focal/main amd64 Packages
+|:-- openjdk-11-jdk --:|:-- 11.0.18+10-0ubuntu1-20.04.1 --:|:-- http://azure.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages --:|
+|:-- openjdk-11-jdk --:|:-- 11.0.18+10-0ubuntu1~20.04.1 --:|:-- http://azure.archive.ubuntu.com/ubuntu focal-security/main amd64 Packages --:|
+|:-- openjdk-11-jdk --:|:-- 11.0.7+10-3ubuntu1 --:|:-- http://azure.archive.ubuntu.com/ubuntu focal/main amd64 Packages --: |
 
 
 - Install Java 11
@@ -87,7 +87,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 sudo cat /etc/passwd
 ```
 
-7. A new user called as **jenkins** is created and the group name is jenkins with the home directory of `/var/lib/jenkins`
+7. A new user called as **jenkins** is created and the group name is **jenkins** with the home directory of `/var/lib/jenkins`
 
 8. From the Jenkins UI, no matter what user you are logged in as, the low level commands are executed as a jenkins user
 
@@ -95,9 +95,9 @@ sudo cat /etc/passwd
 
 10. From Jenkins UI we can do anything that a linux user jenkins can do.
 
-11. From Jenkins UI if we need to do installations etc, we need sudo permissions without password.
+11. From Jenkins UI if we need to do installations etc., we need sudo permissions without password.
 
-12. So Lets configure linux jenkins user to have sudo permissions without password prompts
+12. So Lets configure linux jenkins user to have sudo permissions without any password prompts
 ```
 sudo visudo
 ```
