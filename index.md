@@ -8,6 +8,8 @@
 sudo apt update
 ```
 
+- We need to install java before we install jenkins because without java, jenkins wouldn't work 
+
 - Search for an openjdk (_8,11,17,19_)
 ```
 sudo apt-cache search openjdk
