@@ -10,12 +10,12 @@ sudo apt update
 
 - We need to install java before we install jenkins because without java, jenkins wouldn't work 
 
-- Search for an openjdk (_8,11,17,19_)
+- So, search for an openjdk (_8,11,17,19_) to install
 ```
 sudo apt-cache search openjdk
 ```
 
-- Check a specific openjdk version we need to download
+- Check for a specific openjdk version we need to install
 ```
 sudo apt-cache madison openjdk-11-jdk
 ```
@@ -24,12 +24,12 @@ sudo apt-cache madison openjdk-11-jdk
 | openjdk-11-jdk | 11.0.18+10-0ubuntu1~20.04.1 | http://azure.archive.ubuntu.com/ubuntu focal-security/main amd64 Packages |
 | openjdk-11-jdk | 11.0.7+10-3ubuntu1 | http://azure.archive.ubuntu.com/ubuntu focal/main amd64 Packages |
 
-- Install Java 11
+- Let's install Java11
 ```
 sudo apt install openjdk-11-jdk -y
 ```
 
-- Install Maven
+- Also, Install Maven
 ```
 sudo apt install maven -y
 ```
@@ -53,12 +53,22 @@ mvn --version
 > OS name: "linux", version: "5.15.0-1037-azure", arch: "amd64", family: "unix"
 
 - We may need to install multiple versions of Java/Maven so we need to be very careful with environment variables.
-  So, using following command to set a specific java as a temporary default, we can switch between the jdk versions.
+
+- Let's install openjdk8 as well
+```
+sudo apt install openjdk-8-jdk -y
+```
+
+- Now, that we have two java versions in our system, we need to decide which one should act as a default. 
+- So, using the following command, to set a specific java as a temporary default, we can switch between the jdk versions.
 ```
 export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin:$PATH"
 ```
 
-### Jenkins Installations
+- Now, with the above 'export' command, we have made openjdk-8-jdk as a temporary default for our current session in the terminal.
+- Which means that we can switch these java versions easily with the help of export command and all we need is the Path of openjdk11 to make it a default
+
+### Jenkins Installation:
 
 1. Execute the commands sequentiallly
   _[Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/){:target="_blank"}_
