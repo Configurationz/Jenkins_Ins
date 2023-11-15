@@ -66,7 +66,7 @@ export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin:$PATH"
 ```
 
 - Now, with the above 'export' command, we made openjdk-8-jdk as a temporary default for our current session in the terminal
-- Which means that we can switch these java versions easily with the help of export command and all we need is the installation Path of openjdk11 to make it a default
+- Which means that we can switch these java versions easily with the help of export command and all we need is the **installation path of openjdk11** to make it a default
 
 ### Jenkins Installation:
 
