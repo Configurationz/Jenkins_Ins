@@ -123,3 +123,4 @@ For further Details _[Refer here](https://directdevops.blog/2022/05/02/devops-cl
 
 ![Alt text](octocat.png)
 
+![Preview](github_octocat.png)
