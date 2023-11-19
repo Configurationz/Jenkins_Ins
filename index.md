@@ -71,48 +71,48 @@ export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin:$PATH"
 ### Jenkins Installation:
 
 1. Execute the commands sequentiallly
-  _[Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/){:target="_blank"}_
+  _[Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/)
 
-2. Verify Jenkins Service
+1. Verify Jenkins Service
 ```
 sudo systemctl status jenkins.service
 ```
 
-3. Navigate to `http://<publicip>:8080`
+1. Navigate to `http://<publicip>:8080`
 
-4. Continue with Jenkins Installation
+2. Continue with Jenkins Installation
 ```
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-5. Copy the password & paste on Jenkins page
+1. Copy the password & paste on Jenkins page
   -  Customize Jenkins: Install suggested plugins
   -  Getting Started:
   -  Create First Admin User:
   -  Instance Configuration: `http://<privateip>:8080/` & then Save and Finish.
   -  Jenkis is Ready: Start using Jenkins
  
-6. Next login CLI to check for users
+2. Next login CLI to check for users
 ```
 sudo cat /etc/passwd
 ```
 
-7. A new user called as **jenkins** is created and the group name is **jenkins** with the home directory of `/var/lib/jenkins`
+1. A new user called as **jenkins** is created and the group name is **jenkins** with the home directory of `/var/lib/jenkins`
 
-8. From the Jenkins UI, no matter what user you are logged in as, the low level commands are executed as a jenkins user
+2. From the Jenkins UI, no matter what user you are logged in as, the low level commands are executed as a jenkins user
 
-9. Now lets try to do `sudo apt update` from the Jenkins UI
+3. Now lets try to do `sudo apt update` from the Jenkins UI
 
-10. From Jenkins UI we can do anything that a linux user jenkins can do
+4.  From Jenkins UI we can do anything that a linux user jenkins can do
 
-11. From Jenkins UI if we need to do any installations etc., we need sudo permissions without password
+5.  From Jenkins UI if we need to do any installations etc., we need sudo permissions without password
 
-12. So, Let's configure jenkins user from cli to have sudo permissions without any password prompts
+6.  So, Let's configure jenkins user from cli to have sudo permissions without any password prompts
 ```
 sudo visudo
 ```
 
-13. Next, configure the **jenkins** user without password prompts
+1.  Next, configure the **jenkins** user without password prompts
 ```
 # Allow members of group sudo to execute any command
 %sudo   ALL=(ALL:ALL) ALL
