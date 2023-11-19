@@ -1,5 +1,5 @@
 ## Jenkins Installation & Configuration in ubuntu 
---------------------------------------------------
+-------------------------------------------------
 
 ### Pre-requisites:
 
