@@ -122,3 +122,5 @@ jenkins ALL=(ALL:ALL) NOPASSWD:ALL
 For further Details _[Refer here](https://directdevops.blog/2022/05/02/devops-classroomnotes-02-may-2022/){:target="_blank"}_
 
 <p style="text-align: right"><img src="./jenkins-vibrate.gif"></p>
+
+![Alt text](jenkins-worried-little.gif)
