@@ -124,3 +124,5 @@ For further Details _[Refer here](https://directdevops.blog/2022/05/02/devops-cl
 <p style="text-align: right"><img src="./jenkins-vibrate.gif"></p>
 
 ![Alt text](jenkins-worried-little.gif)
+
+![Alt text](jenkins-b&W.png)
